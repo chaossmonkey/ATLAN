@@ -7,21 +7,22 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class FlaggedResponse {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long flaggedResponseId;
 
     @ManyToOne
-    private MarketResponse marketResponse; // Reference to the original response
+    @JoinColumn(name = "response_id")
+    private Response response;
 
-    private String flagReason; // Reason for flagging the response
-    private String feedback; // Feedback for the data collector
+    @ManyToOne
+    @JoinColumn(name = "business_rule_id")
+    private BusinessRule businessRule;
 
 
 }
-
