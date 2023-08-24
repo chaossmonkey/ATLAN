@@ -74,6 +74,23 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+
+		<dependency>
+			<groupId>com.google.api-client</groupId>
+			<artifactId>google-api-client</artifactId>
+			<version>1.32.1</version> <!-- Update to the latest version -->
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.google.oauth-client</groupId>-->
+<!--			<artifactId>google-oauth-client</artifactId>-->
+<!--			<version>1.32.2</version> &lt;!&ndash; Update to the latest version &ndash;&gt;-->
+<!--		</dependency>-->
+		<dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-sheets</artifactId>
+			<version>v4-rev581-1.25.0</version> <!-- Update to the latest version -->
+		</dependency>
 	</dependencies>
 
 
