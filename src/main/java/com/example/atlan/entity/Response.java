@@ -47,7 +47,7 @@ public class Response {
     )
     private List<BusinessRule> violatedRules;
 
-    // ... other getters and setters
+
 
     // Method to check and flag violated rules
     public void checkBusinessRules() {
